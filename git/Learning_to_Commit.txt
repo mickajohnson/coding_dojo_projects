@@ -1,0 +1,19 @@
+cd desktop
+mkdir test
+cd test
+touch index.html styles.css aboutMe.html
+git init
+git add .
+git commit -m "Original"
+open aboutMe.txt
+git add aboutMe.txt
+git commit -m "updated aboutMe"
+open aboutMe.txt
+git add aboutMe.txt
+git commit -m "added favorite movie to aboutMe"
+git log
+git revert -n 69452a0
+git commit -m "Reverted to previous"
+open aboutMe.txt
+git add aboutMe.txt
+git commit -m "Added favorite TV show in aboutMe"
